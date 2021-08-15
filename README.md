@@ -106,11 +106,13 @@ Go into your sites directory and type `zola serve`. You should see your new site
 ### Theme Options
 ```toml
 navbar_items = [
-	{ url = "$BASE_URL/", name = "Home" },
-	{ url = "$BASE_URL/posts", name = "Posts" },
-	{ url = "$BASE_URL/docs", name = "Docs" },
-	{ url = "$BASE_URL/tags", name = "Tags" },
-	{ url = "$BASE_URL/categories", name = "Categories" },
+ { code = "en", nav_items = [
+  { url = "$BASE_URL/", name = "Home" },
+  { url = "$BASE_URL/posts", name = "Posts" },
+  { url = "$BASE_URL/docs", name = "Docs" },
+  { url = "$BASE_URL/tags", name = "Tags" },
+  { url = "$BASE_URL/categories", name = "Categories" },
+ ]},
 ]
 
 # Add links to favicon, you can use https://realfavicongenerator.net/ to generate favicon for your site
@@ -136,6 +138,8 @@ keybase = "<keybase_username>"
 linkedin = "<linkedin_username>"
 stackoverflow = "<stackoverflow_userid>"
 twitter = "<twitter_username>"
+instagram = "<instagram_usernaem>"
+behance = "<behance_username>"
 
 
 # To add google analytics
